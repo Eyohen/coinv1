@@ -9,6 +9,7 @@ import Institution from './pages/Institution';
 import ViewInstitution from './pages/ViewInstitution';
 import CreateInstitution from './pages/CreateInstitution';
 import EditInstitution from './pages/EditInstitution';
+import Teachers from './pages/Teachers';
 
 const App = () => {
 return (
@@ -21,6 +22,10 @@ return (
   <Route exact path="/viewinstitution" element={<ViewInstitution/>}/>
   <Route exact path="/createinstitution" element={<CreateInstitution/>}/>
   <Route exact path="/editinstitution" element={<EditInstitution/>}/>
+  <Route exact path="/teachers" element={<Teachers/>}/>
+  <Route exact path="/viewteacher" element={<ViewInstitution/>}/>
+  <Route exact path="/createteacher" element={<CreateInstitution/>}/>
+  <Route exact path="/editteacher" element={<EditInstitution/>}/>
 
 
 

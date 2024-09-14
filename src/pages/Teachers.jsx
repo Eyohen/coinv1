@@ -13,18 +13,18 @@ import { MdEditNote } from "react-icons/md";
 
 
 const usersData = [
-  { id:1, name: 'Aquarius', location: '1 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'USA', date: '2023-01-01' },
-  { id:2, name: 'Busy minds', location: '2 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'Nigeria', date: '2023-01-01' },
-  { id:3,name: 'Holy Child', location: '3 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Inactive', state: 'CA', country: 'London', date: '2023-01-01' },
-  { id:4,name: 'Federal Girls', location: '4 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Inactive', state: 'CA', country: 'Ghana', date: '2023-01-01' },
-  { id:5,name: 'Life Fort', location: '5 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'Japan', date: '2023-01-01' },
-  { id:6,name: 'Simi', location: '6 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'Egypt', date: '2023-01-01' },
-  { id:7,name: 'Joshua', location: '7 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'Morocco', date: '2023-01-01' },
-  { id:8,name: 'Faith', location: '8 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'Spain', date: '2023-01-01' },
-  { id:9,name: 'Bassey', location: '9 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', state: 'CA', country: 'USA', date: '2023-01-01' },
+  { id:1, firstName: 'Aquarius', lastName: '1 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'USA', date: '2023-01-01' },
+  { id:2, firstName: 'Busy minds', lastName: '2 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Non-Teaching', country: 'Nigeria', date: '2023-01-01' },
+  { id:3,firstName: 'Holy Child', lastName: '3 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Inactive', type: 'Teaching', country: 'London', date: '2023-01-01' },
+  { id:4,firstName: 'Federal Girls', lastName: '4 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Inactive', type: 'Non-Teaching', country: 'Ghana', date: '2023-01-01' },
+  { id:5,firstName: 'Life Fort', lastName: '5 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'Japan', date: '2023-01-01' },
+  { id:6,firstName: 'Simi', lastName: '6 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'Egypt', date: '2023-01-01' },
+  { id:7,firstName: 'Joshua', lastName: '7 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'Morocco', date: '2023-01-01' },
+  { id:8,firstName: 'Faith', lastName: '8 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'Spain', date: '2023-01-01' },
+  { id:9,firstName: 'Bassey', lastName: '9 Churchill road', email: 'john@example.com', phone: '123-456-7890', status: 'Active', type: 'Teaching', country: 'USA', date: '2023-01-01' },
 ];
 
-const Institution = () => {
+const Teachers = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [users, setUsers] = useState(usersData);
   const [search, setSearch] = useState('');
@@ -88,7 +88,7 @@ const Institution = () => {
     <div className='bg-gray-50 h-[100vh]'>
     <Sidebar/>
     <div className='flex-1 ml-[300px] p-9'>
-         <p className='font-bold text-3xl'>Institution</p>
+         <p className='font-bold text-3xl'>Teachers</p>
       <div className="mb-4 flex gap-x-4 pt-9 justify-end px-24">
 
 
@@ -136,11 +136,11 @@ const Institution = () => {
           )}
         {/* </div> */}
 
-        <Link to={'/createinstitution'}><button className='bg-blue-500 text-white px-4 rounded-lg text-xl font-semibold flex items-center gap-x-2 py-2'><BsPlusLg  size={23}  color='white'/>Add Institution</button></Link>
+        <Link to={'/createinstitution'}><button className='bg-blue-500 text-white px-4 rounded-lg text-xl font-semibold flex items-center gap-x-2 py-2'><BsPlusLg  size={23}  color='white'/>Add Teacher</button></Link>
       </div>
 
       <div className='bg-white py-6 rounded-xl border'>
-        <p className='text-2xl font-semibold px-6 '>Institution</p>
+        <p className='text-2xl font-semibold px-6 '>Teachers</p>
 
         <div className='border-b border-gray-300 mt-4'></div>
 
@@ -158,13 +158,14 @@ const Institution = () => {
         <thead className='bg-blue-100 rounded-2xl'>
           <tr className=''>
           <th className="py-4 pl-6">Id</th>
-            <th className="py-3 px-3">Name</th>
-            <th className="py-3 px-3">Location</th>
-            <th className="py-3 px-3">LGA</th>
+            <th className="py-3 px-3">First Name</th>
+            <th className="py-3 px-3">Last Name</th>
+            <th className="py-3 px-3">Email</th>
+            <th className="py-3 px-3">Phone</th>
             <th className="py-3 px-3">Date Joined</th>
+            <th className="py-3 px-3">Type</th>
             <th className="py-3 px-3">Status</th>
-            <th className="py-3 px-3">State</th>
-            <th className="py-3 px-3">Country</th>
+
   
             <th className="py-3 px-3"></th>
           </tr>
@@ -173,13 +174,14 @@ const Institution = () => {
           {currentUsers.map((user, index) => (
             <tr key={user.id} onClick={() => setShowModal(!showModal)} className='border-b border-gray-300 text-gray-500 '>
               <td className="py-2 pl-6">{user.id}</td>
-              <td className="py-2 px-3">{user.name}</td>
-              <td className="py-2 px-3">{user.location}</td>
+              <td className="py-2 px-3">{user.firstName}</td>
+              <td className="py-2 px-3">{user.lastName}</td>
               <td className="py-2 px-3">{user.email}</td>
+              <td className="py-2 px-3">{user.phone}</td>
               <td className="py-2 px-3">{user.date}</td>
+              <td className="py-2 px-3">{user.type}</td>
               <td className="py-2 px-3">{user.status === "Active" ? <p className='bg-green-100 text-green-600 font-semibold px-3 rounded-md max-w-[90px]'><div className='flex gap-x-1 items-center'><GoDotFill color='green' size={15} /><p> Active</p></div></p> : <p className='bg-red-100 text-red-600 font-semibold px-2 rounded-md max-w-[90px]'><div className='flex gap-x-1 items-center'><GoDotFill color='red' size={15}/>Inactive</div></p>}</td>
-              <td className="py-2 px-3">{user.state}</td>
-              <td className="py-2 px-3">{user.country}</td>
+       
       
               <div onClick={() => handlePress(user)} className="relative cursor-pointer">
               <td className="py-4 px-3"><IoEllipsisVertical /></td>
@@ -222,4 +224,4 @@ const Institution = () => {
   );
 };
 
-export default Institution;
+export default Teachers;

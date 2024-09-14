@@ -39,52 +39,85 @@ const ViewInstitution = () => {
 
 
 <div>
-        <div className='bg-white border border-gray-300 rounded-xl p-6'>
+        {/* <div className='bg-white border border-gray-300 rounded-xl p-6'>
             <p className='text-xl font-semibold'>Details</p>
             <div className='border-b border-gray-300 mt-4'></div>
 
             
         <div className='bg-white border border-gray-300 rounded-xl p-6 mt-12'>
             
-    <div className='flex gap-x-96'>
+    <div className='flex gap-x-96 max-w-[1300px]'>
 
-            <div>
+            <div className='max-w-[200px]'>
             <p className='text-xl font-semibold'>School Name</p>
-            <p className='text-gray-500 text-lg max-w-[90px]'>Government Primary/Secondary</p>
+            <p className='text-gray-500 text-lg'>Government Primary/Secondary</p>
             </div>
 
-            <div>
+            <div className='max-w-[200px]'>
             <p className='text-xl font-semibold'>Contact Number</p>
             <p className='text-gray-500 text-lg'>Government Secondary</p>
             </div>
 
-            <div>
+            <div className='max-w-[200px]'>
             <p className='text-xl font-semibold'>Date Joined</p>
             <p className='text-gray-500 text-lg'>Government Secondary</p>
             </div>
 
             </div>
 
-            <div className='flex gap-x-96 mt-12'>
+            <div className='flex gap-x-96 max-w-[1300px] mt-12'>
 
-<div>
+<div className='max-w-[200px]'>
 <p className='text-xl font-semibold'>Total No. of Teachers</p>
-<p className='text-gray-500 text-lg max-w-[90px]'>Government Secondary</p>
+<p className='text-gray-500 text-lg'>Government Secondary</p>
 </div>
 
-<div>
+<div className='max-w-[200px]'>
 <p className='text-xl font-semibold'>School Type</p>
 <p className='text-gray-500 text-lg'>Primary ,Secondary</p>
 </div>
 
-<div>
+<div className='max-w-[200px]'>
 <p className='text-xl font-semibold'>Location</p>
 <p className='text-gray-500 text-lg'>Cross River, Nigeria</p>
 </div>
 
 </div>
-        </div>
-        </div>
+        </div> 
+        </div>*/}
+          <div className='bg-white border border-gray-300 rounded-xl p-6'>
+              <p className='text-xl font-semibold'>Details</p>
+              <div className='border-b border-gray-300 mt-4'></div>
+
+              <div className='bg-white border border-gray-300 rounded-xl p-6 mt-12'>
+                <div className='grid grid-cols-3 gap-x-8 gap-y-12'>
+                  <div>
+                    <p className='text-xl font-semibold'>School Name</p>
+                    <p className='text-gray-500 text-lg'>Government Primary/Secondary</p>
+                  </div>
+                  <div>
+                    <p className='text-xl font-semibold'>Contact Number</p>
+                    <p className='text-gray-500 text-lg'>Government Secondary</p>
+                  </div>
+                  <div>
+                    <p className='text-xl font-semibold'>Date Joined</p>
+                    <p className='text-gray-500 text-lg'>Government Secondary</p>
+                  </div>
+                  <div>
+                    <p className='text-xl font-semibold'>Total No. of Teachers</p>
+                    <p className='text-gray-500 text-lg'>Government Secondary</p>
+                  </div>
+                  <div>
+                    <p className='text-xl font-semibold'>School Type</p>
+                    <p className='text-gray-500 text-lg'>Primary, Secondary</p>
+                  </div>
+                  <div>
+                    <p className='text-xl font-semibold'>Location</p>
+                    <p className='text-gray-500 text-lg'>Cross River, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 <div className='flex gap-x-9'>

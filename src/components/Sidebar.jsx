@@ -38,33 +38,34 @@ const Sidebar = () => {
             <div>
         <p className='text-blue-500 font-bold mt-9'>Menu</p>
 
-        <Link to={'/dashboard'}> <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+        <Link to={'/dashboard'}> <div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
     
         <FiUsers className='' />
         <p className=' py-1 text-center '>Dashboard</p>
         </div></Link>
 
-        <Link to={'/institution'}> <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+        <Link to={'/institution'}> <div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
         <BiPurchaseTag />
         <p className='py-1 text-center'>Institutions</p>
         </div></Link>
 
-        <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+        <Link to={'/teachers'}><div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
         <TbCategory />
-        <p className='py-1 text-center'>School Admins</p>
-        </div>
+       <p className='py-1 text-center'>Teachers</p>
+        </div></Link>
+
 {/* 
-        <Link to={'/brandtable'}> <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+        <Link to={'/brandtable'}> <div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
         <TbCategory />
         <p className='py-1 text-center'>Brands</p>
         </div></Link> */}
 
-    <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+    <div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
         <GoPackage />
         <p className='py-1 text-center'>Messages</p>
         </div>
 
-       <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa]  px-2 mt-6 rounded'>
+       <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa] px-2 mt-6 rounded'>
         <IoSettingsOutline className=''/>
         <p className='py-1 text-center'>Settings</p>
         </div>
