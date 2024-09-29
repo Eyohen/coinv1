@@ -60,10 +60,11 @@ const Sidebar = () => {
         <p className='py-1 text-center'>Brands</p>
         </div></Link> */}
 
-    <div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
+    
+<Link to={'/questionbank'}><div className='flex gap-x-3 items-center hover:bg-blue-200 px-2 mt-6 rounded'>
         <GoPackage />
-        <p className='py-1 text-center'>Messages</p>
-        </div>
+        <p className='py-1 text-center'>Question bank</p>
+        </div></Link>
 
        <div className='flex gap-x-3 items-center hover:bg-[#e6e6fa] px-2 mt-6 rounded'>
         <IoSettingsOutline className=''/>
