@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import Instruction from './pages/Instruction';
 import ExamPage from './pages/ExamPage';
 import Finish from './pages/Finish';
+import Video from './pages/Video';
 
 const App = () => {
 return (
@@ -38,6 +39,7 @@ return (
   <Route exact path="/editteacher" element={<EditInstitution/>}/>
   <Route exact path="/questionbank" element={<QuestionBank/>}/>
   <Route exact path="/createexamination" element={<CreateExamination/>}/>
+  <Route exact path="/video" element={<Video/>}/>
 
 
 
